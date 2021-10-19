@@ -13,5 +13,6 @@ def getdata():#function that scrapes data & saves it into a JSON file
 while True:
     getdata()
     sleep(60 * 60)#automatically fetches data every hour 
+# Sample Output : [{'Title': 'me', 'ch1': 'cs', 'ch2': 'valo', 'phno': '1'}]
 #shareplum docs https://pypi.org/project/SharePlum/
 #discord id- mememan#2565
