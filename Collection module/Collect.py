@@ -1,6 +1,5 @@
 from office365.runtime.auth.user_credential import UserCredential
 from office365.sharepoint.client_context import ClientContext
-
 """
 Code snippet below is to generate a query and return the list
 """
