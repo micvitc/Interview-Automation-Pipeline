@@ -25,18 +25,18 @@ function App() {
         </header>
         <hr></hr>
         <Routes>
-          <Route exact path='/' element={<AppContainer>
-        <FormCard />
-        <FormCard />
-        <FormCard />
-        <FormCard />
-      </AppContainer>}>
-        </Route>
+          <Route exact path='/' element={
+            <AppContainer>
+              <FormCard />
+              <FormCard />
+              <FormCard />
+              <FormCard />
+            </AppContainer>}>
+          </Route>
           <Route path="/Form" element={<Form/>}>
           </Route>
         </Routes>
       </Router>
-      
     </>
   );
 }

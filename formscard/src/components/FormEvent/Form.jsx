@@ -2,7 +2,7 @@ import React,{ useState } from "react"
 
 export function Form() {
 
-    const [FormEvent,setFormEvent] = useState ({
+    const [FormState,setFormState] = useState ({
         fname : "",
         url : "",
         api : ""
@@ -12,7 +12,7 @@ export function Form() {
         const name = e.target.name;
         const value = e.target.value;
 
-        setFormEvent({...FormEvent,[name]:value});
+        setFormState({...FormState,[name]:value});
     }
 
 
@@ -20,15 +20,15 @@ export function Form() {
         <form>
             <div>
                 <label> Name of the Form: </label>
-                <input type="text" value={FormEvent.fname} onChange={handleInput} placeholder="text" name="fname"required autoFocus></input>
+                <input type="text" value={FormState.fname} onChange={handleInput} placeholder="text" name="fname"required autoFocus></input>
             </div>
             <div>
                 <label> URL of the Form: </label>
-                <input type="url" value={FormEvent.url} onChange={handleInput} placeholder="URL" name="url" required></input>
+                <input type="url" value={FormState.url} onChange={handleInput} placeholder="URL" name="url" required></input>
             </div>
             <div>
                 <label> API Key: </label>
-                <input type="url" value={FormEvent.api} onChange={handleInput} placeholder="URL" name="api" required></input>
+                <input type="url" value={FormState.api} onChange={handleInput} placeholder="URL" name="api" required></input>
             </div>
             <div>
                 <button type="submit">Create</button>
