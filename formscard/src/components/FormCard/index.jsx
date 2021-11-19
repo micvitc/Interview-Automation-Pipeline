@@ -122,7 +122,7 @@ export function FormCard(props) {
               dragElastic={0.12}
               whileTap={{ cursor: "grabbing" }}
             >
-              <img src={Forms_icon}/>
+              <img src={Forms_icon} alt=""/>
             </Detail>
           </DetailWrapper>
           <TitleText>Recruitment Form</TitleText>

@@ -88,7 +88,7 @@ export function FormDetails(props) {
       
       <OpenButton>OPEN</OpenButton>
       <MICLogo>
-        <img src={MICLOGO} />
+        <img src={MICLOGO} alt="Card"/>
       </MICLogo>
     </DetailsContainer>
   );

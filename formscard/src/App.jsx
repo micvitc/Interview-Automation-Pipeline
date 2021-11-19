@@ -1,6 +1,10 @@
 import "./App.css";
 import styled from "styled-components";
+import React from "react"
+import { BrowserRouter as Router,Route,Routes,Link } from "react-router-dom"
 import { FormCard } from "./components/FormCard";
+import { Form } from "./components/FormEvent/Form"
+
 
 const AppContainer = styled.div`
   width: 100%;
@@ -10,19 +14,31 @@ const AppContainer = styled.div`
   justify-content: center;
 `;
 
+
+
 function App() {
   return (
-    
-    <AppContainer>
-      <FormCard />
-      <FormCard />
-      <FormCard />
-      <FormCard />
-    </AppContainer>
-    
-    
+    <>
+      <Router>
+        <header>
+          <Link to="/Form">Event Form</Link>
+        </header>
+        <hr></hr>
+        <Routes>
+          <Route exact path='/' element={
+            <AppContainer>
+              <FormCard />
+              <FormCard />
+              <FormCard />
+              <FormCard />
+            </AppContainer>}>
+          </Route>
+          <Route path="/Form" element={<Form/>}>
+          </Route>
+        </Routes>
+      </Router>
+    </>
   );
-  
 }
 
 export default App;
