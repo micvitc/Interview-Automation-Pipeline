@@ -16,6 +16,7 @@ Create a MS Form and a Sharepoint List with enough columns as the form's questio
 4. Save the flow and test it.
 
 # Collecting responses from sharepoint
+![ip](./Demo/ip.jpeg)
 1. Log into sharepoint and using your organisation's mail id and copy the url and paste in the site_url field in the python code 
 2. Give the list name in the sp_list field in the python code
 3. Now give your mail id and password in the UserCredential field
