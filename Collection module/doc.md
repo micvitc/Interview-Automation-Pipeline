@@ -4,7 +4,7 @@ This module handles the collection of data from the form and providing it to oth
 
 # Setup
 Create a MS Form and a Sharepoint List with enough columns as the form's questions by logging into [office](https://www.office.com/) using organisation mail id 
-
+![setup](./Demo/Setup.jpeg)
 # Flow Creation
 1. Start from Automated flow (from blank) with a trigger _When a new response is submitted_  _(Microsoft Forms)_.
 ![image1](./Demo/image-1.png)
