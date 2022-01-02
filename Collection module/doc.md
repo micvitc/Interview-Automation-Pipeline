@@ -22,6 +22,10 @@ Create a MS Form and a Sharepoint List with enough columns as the form's questio
 3. Now give your mail id and password in the UserCredential field
 4. Now run the python code after `pip install -r requirements.txt`
 5. This will give the output as a list of dictionaries
+# Sample Input & Output
+![input_list](./Demo/input_list.jpeg)
+
+![Output](./Demo/Output.jpeg)
 # Todo List
  - [ ] Markdown Doc
  - [ ] Implementing env based hiding for username and password
