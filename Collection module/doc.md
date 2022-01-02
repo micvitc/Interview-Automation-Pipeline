@@ -7,7 +7,7 @@ Create a MS Form and a Sharepoint List with enough columns as the form's questio
 
 # Flow Creation
 1. Start from Automated flow (from blank) with a trigger _When a new response is submitted_  _(Microsoft Forms)_.
-![image1](./demo/image-1.png)
+![image1](./Demo/image-1.png)
 2. Select your form in the _Form Id_ field (flow will run if new response for this form is submitted). Add the _Get response details (Microsoft Forms)_ action (to collect data from the submitted form).
 3. Add _Create item (SharePoint)_ action, to create the new item for the submitted response in the list you prepared.
 4. Save the flow and test it.
