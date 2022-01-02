@@ -4,6 +4,7 @@ import React from "react"
 import { BrowserRouter as Router,Route,Routes,Link } from "react-router-dom"
 import { FormCard } from "./components/FormCard";
 import { Form } from "./components/FormEvent/Form"
+import { Table } from "./components/TableDetails/TableNew"
 
 
 const AppContainer = styled.div`
@@ -23,6 +24,9 @@ function App() {
         <header>
           <Link to="/Form">Event Form</Link>
         </header>
+        <header>
+          <Link to="/Table"> Table Section</Link>
+        </header>
         <hr></hr>
         <Routes>
           <Route exact path='/' element={
@@ -34,6 +38,8 @@ function App() {
             </AppContainer>}>
           </Route>
           <Route path="/Form" element={<Form/>}>
+          </Route>
+          <Route path="/Table" element={<Table/>}>
           </Route>
         </Routes>
       </Router>
