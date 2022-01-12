@@ -1,11 +1,11 @@
 import "./App.css";
 import styled from "styled-components";
-import React from "react"
+import React, { useState } from "react"
 import { BrowserRouter as Router,Route,Routes,Link } from "react-router-dom"
 import { FormCard } from "./components/FormCard";
 import { Form } from "./components/FormEvent/Form"
 import { Table } from "./components/TableDetails/TableNew"
-
+import { Modal } from "./components/Modal/ModalForm"
 
 const AppContainer = styled.div`
   width: 100%;
@@ -18,6 +18,10 @@ const AppContainer = styled.div`
 
 
 function App() {
+  const[modal,setModal] = useState(false);
+
+  const toggle = () => {setModal(!modal)};
+
   return (
     <>
       <Router>
@@ -26,6 +30,9 @@ function App() {
         </header>
         <header>
           <Link to="/Table"> Table Section</Link>
+        </header>
+        <header>
+          <Link to="/" onClick={()=>toggle()}>Modal Form</Link>
         </header>
         <hr></hr>
         <Routes>
@@ -43,6 +50,7 @@ function App() {
           </Route>
         </Routes>
       </Router>
+      <Modal show={modal} close={toggle}/>
     </>
   );
 }
